@@ -1,0 +1,142 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background: #0f0f1a;
+}
+
+.background {
+  background: url('https://wallpapercave.com/wp/wp5128415.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+header {
+  background-color: rgba(0, 0, 50, 0.8);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #00f0ff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #00f0ff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+  background-color: rgba(0, 0, 30, 0.8);
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+h2 {
+  border-bottom: 2px solid #00f0ff;
+  padding-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 40, 0.9);
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+/* Crate Page */
+.crate-gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.crate-box {
+  background-color: rgba(0, 0, 40, 0.7);
+  padding: 15px;
+  border: 2px solid #00f0ff;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.crate-box:hover {
+  transform: scale(1.05);
+}
+
+.crate-box img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Crate Results */
+.crate-results {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2em;
+}
+
+.crate-reward {
+  font-weight: bold;
+  color: #00ffcc;
+  margin-top: 10px;
+}
+
+/* Store Page */
+.store-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.item-card {
+  background-color: rgba(0, 0, 50, 0.8);
+  border: 2px solid #00f0ff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.item-card button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #00f0ff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.item-card button:hover {
+  background-color: #00c2d1;
+}
