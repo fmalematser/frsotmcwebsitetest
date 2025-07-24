@@ -1,38 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Store – DonutSMP</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DonutSMP Store</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header><h1>DonutSMP Store</h1><a href="index.html">Home</a></header>
+  <header class="hero">
+    <h1>DonutSMP Store</h1>
+    <p>Buy ranks, crate keys & perks to support the server</p>
+    <a href="index.html" class="btn">← Back to Home</a>
+  </header>
 
-  <section class="rank">
-    <h2>Donut+ (30 days)</h2>
-    <p><strong>Price:</strong> $4.99 (subscription)</p>
-    <ul>
-      <li>+3 Homes</li>
-      <li><code>/hide</code> (scramble username)</li>
-      <li>Lobby flight</li>
-      <li>Faster Auction access via <code>/settings</code></li>
-      <li>Shards everywhere (while AFK + per kill)</li>
-      <li>Shorter RTP cooldown</li>
-      <li>Name prefix</li>
-    </ul>
-  </section>
+  <main class="store-container">
 
-  <section class="crate-keys">
-    <h2>Crate Keys</h2>
-    <ul>
-      <li>Common (redeemable hourly or purchasable)</li>
-      <li>Prime (purchasable)</li>
-      <li>Gold (purchasable)</li>
-      <li>Amethyst (purchasable, “Most Popular”)</li>
-      <li>Crimson (purchasable)</li>
-    </ul>
-    <p>* Based on store and wiki listing :contentReference[oaicite:5]{index=5}</p>
-  </section>
+    <!-- Ranks Section -->
+    <section class="ranks">
+      <h2>Ranks</h2>
+      <div class="grid">
+        <div class="card rank-card">
+          <h3>Common</h3>
+          <p><strong>Price:</strong> $0.99 (one-time)</p>
+          <ul>
+            <li>Basic crate keys</li>
+            <li>Access to general perks</li>
+          </ul>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+
+        <div class="card rank-card">
+          <h3>Prime</h3>
+          <p><strong>Price:</strong> $2.99 (one-time)</p>
+          <ul>
+            <li>Better crate keys</li>
+            <li>Extra perks over Common</li>
+          </ul>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+
+        <div class="card rank-card">
+          <h3>Gold</h3>
+          <p><strong>Price:</strong> $3.99 (one-time)</p>
+          <ul>
+            <li>Improved crate keys</li>
+            <li>More perks</li>
+          </ul>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+
+        <div class="card rank-card">
+          <h3>Amethyst <span class="popular">Most Popular</span></h3>
+          <p><strong>Price:</strong> $4.99 (one-time)</p>
+          <ul>
+            <li>Premium crate keys</li>
+            <li>Exclusive perks</li>
+          </ul>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+
+        <div class="card rank-card">
+          <h3>Crimson</h3>
+          <p><strong>Price:</strong> $2.99 (one-time)</p>
+          <ul>
+            <li>Specialized perks</li>
+            <li>Unique crate keys</li>
+          </ul>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+
+        <div class="card rank-card">
+          <h3>Donut+ <small>(Subscription)</small></h3>
+          <p><strong>Price:</strong> $4.99 / 30 days</p>
+          <ul>
+            <li>+3 Homes</li>
+            <li><code>/hide</code> (scramble username)</li>
+            <li>Lobby flight</li>
+            <li>Faster Auction access <code>/settings</code></li>
+            <li>Shards everywhere (AFK + per kill)</li>
+            <li>Shorter RTP cooldown</li>
+            <li>Priority queue</li>
+          </ul>
+          <button class="btn buy-btn">Subscribe</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Crate Keys Section -->
+    <section class="crate-keys">
+      <h2>Crate Keys</h2>
+      <div class="grid">
+        <div class="card crate-card">
+          <h3>Common</h3>
+          <p>Redeemable hourly or purchasable</p>
+        </div>
+        <div class="card crate-card">
+          <h3>Prime</h3>
+          <p>Purchasable for better rewards</p>
+        </div>
+        <div class="card crate-card">
+          <h3>Gold</h3>
+          <p>Higher-tier crate key</p>
+        </div>
+        <div class="card crate-card">
+          <h3>Amethyst</h3>
+          <p>Most popular crate key</p>
+        </div>
+        <div class="card crate-card">
+          <h3>Crimson</h3>
+          <p>Specialized high-tier crate key</p>
+        </div>
+      </div>
+      <p class="disclaimer">
+        * Based on public store & wiki info.
+      </p>
+    </section>
+
+  </main>
 
   <footer>
     <p>Powered by Tebex. Privacy Policy · Support · Terms · Refunds</p>
