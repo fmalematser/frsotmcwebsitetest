@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrostMC - Crates</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="crate.js" defer></script>
+</head>
+<body>
+  <div class="background"></div>
+  <header>
+    <h1>FrostMC Crates</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="store.html">Store</a>
+      <a href="crates.html">Crates</a>
+      <a href="donate.html">Donate</a>
+      <a href="wiki.html">Wiki</a>
+    </nav>
+  </header>
+
+  <section class="crates">
+    <h2>Open Crates and Win!</h2>
+    <p>Spin to win rare items. Click a crate to try it out.</p>
+
+    <div class="crate-gallery">
+      <div class="crate-box" onclick="openCrate('Ice')">
+        <h3>Ice Crate</h3>
+        <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/0c/Ice.png" alt="Ice Crate" />
+      </div>
+      <div class="crate-box" onclick="openCrate('Amethyst')">
+        <h3>Amethyst Crate</h3>
+        <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f0/Amethyst_Block.png" alt="Amethyst Crate" />
+      </div>
+    </div>
+
+    <div id="crate-results" class="crate-results"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FrostMC. Crate previews are for display only.</p>
+  </footer>
+</body>
+</html>
