@@ -5,46 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FrostMC Store</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Background -->
-  <div class="bg-overlay"></div>
-
-  <!-- Top Bar -->
-  <header class="top-bar">
-    <div class="server-info">
-      <button id="copy-ip">COPY IP</button>
-      <span id="player-count">Players online: ...</span>
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="images/logo.png" alt="FrostMC Logo" class="logo">
     </div>
-
-    <div class="login-bar">
-      <input type="text" id="mc-username" placeholder="Minecraft Username">
-      <img id="mc-avatar" src="https://crafatar.com/avatars/Steve?size=40" alt="Avatar">
-      <button onclick="updateAvatar()">Login</button>
+    <nav class="nav-center">
+      <a href="#">HOME</a>
+      <a href="#">STORE</a>
+      <a href="#">VOTE</a>
+    </nav>
+    <div class="nav-right">
+      <button class="nav-icon"><i class="fa-solid fa-gift"></i></button>
+      <button class="login-btn"><i class="fa-solid fa-user"></i> Login</button>
+      <div class="server-status">
+        <span id="player-count">0 ONLINE</span>
+        <button class="copy-ip" onclick="copyIP()">frostmc.pro</button>
+      </div>
     </div>
   </header>
 
-  <!-- Store Section -->
-  <main class="store">
-    <h1>Welcome to FrostMC Store</h1>
-    <p>Select your items and ranks below.</p>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Welcome to the FrostMC store!</h1>
+    <p>Buy coins, ranks, and more from the FrostMC store!</p>
+    <button class="start-btn">Start browsing <i class="fa-solid fa-arrow-right"></i></button>
+  </section>
 
-    <div class="store-grid">
-      <div class="store-item">
-        <img src="images/rank1.png" alt="Rank Icon">
-        <h3>VIP Rank</h3>
-        <button>Add to Cart</button>
-      </div>
-      <div class="store-item">
-        <img src="images/crate.png" alt="Crate Icon">
-        <h3>Crate Key</h3>
-        <button>Add to Cart</button>
-      </div>
-      <!-- Add more store items here -->
+  <!-- LOGIN + KEYS -->
+  <section class="cards-row">
+    <div class="card blue-card">
+      <h3>Login</h3>
+      <p>To start shopping</p>
+      <i class="fa-solid fa-arrow-right"></i>
     </div>
-  </main>
+    <div class="card">
+      <h3>Keys</h3>
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+  </section>
 
-  <!-- Footer -->
+  <!-- SALE BANNER -->
+  <section class="sale-banner">
+    <p><strong>30% off sale</strong><br>Only 19d 5h 12m 27s remaining!</p>
+  </section>
+
+  <!-- RANKS -->
+  <section class="section-title">
+    <h2>Ranks</h2>
+  </section>
+  <section class="item-grid">
+    <div class="item-card">
+      <img src="images/vip.png" alt="VIP Rank">
+      <h4>VIP</h4>
+      <p><span class="old-price">$4.99</span> $3.49</p>
+      <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+    </div>
+    <div class="item-card">
+      <img src="images/mvp.png" alt="MVP Rank">
+      <h4>MVP</h4>
+      <p><span class="old-price">$9.99</span> $6.99</p>
+      <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+    </div>
+  </section>
+
+  <!-- KEYS -->
+  <section class="section-title">
+    <h2>Keys</h2>
+  </section>
+  <section class="item-grid">
+    <div class="item-card">
+      <img src="images/key-blue.png" alt="Common Key">
+      <h4>Common</h4>
+      <p><span class="old-price">$0.62</span> $0.43</p>
+      <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+    </div>
+    <div class="item-card">
+      <img src="images/key-red.png" alt="Crimson Key">
+      <h4>Crimson</h4>
+      <p><span class="old-price">$1.87</span> $1.31</p>
+      <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 FrostMC | Not affiliated with Mojang AB.</p>
   </footer>
