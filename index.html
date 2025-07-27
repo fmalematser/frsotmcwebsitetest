@@ -3,46 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DonutSMP - Crossplay Hardcore Server</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>FrostMC Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Background -->
+  <div class="bg-overlay"></div>
 
-  <header class="hero">
-    <h1>DonutSMP</h1>
-    <p class="subtitle">Crossplay Survival • Anarchy • Hardcore SMP</p>
-    <div class="btn-group">
-      <a href="store.html" class="btn">Visit Store</a>
-      <a href="stats.html" class="btn">View Stats</a>
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <div class="server-info">
+      <button id="copy-ip">COPY IP</button>
+      <span id="player-count">Players online: ...</span>
+    </div>
+
+    <div class="login-bar">
+      <input type="text" id="mc-username" placeholder="Minecraft Username">
+      <img id="mc-avatar" src="https://crafatar.com/avatars/Steve?size=40" alt="Avatar">
+      <button onclick="updateAvatar()">Login</button>
     </div>
   </header>
 
-  <section class="info">
-    <h2>🎮 Server Info</h2>
-    <ul>
-      <li><strong>Java IP:</strong> donutsmp.net</li>
-      <li><strong>Bedrock IP:</strong> donutsmp.net:19132</li>
-      <li><strong>Version:</strong> 1.21.7 and older</li>
-      <li><strong>Status:</strong> 24/7 Online</li>
-      <li><strong>Players:</strong> 18,000+ daily players</li>
-    </ul>
-  </section>
+  <!-- Store Section -->
+  <main class="store">
+    <h1>Welcome to FrostMC Store</h1>
+    <p>Select your items and ranks below.</p>
 
-  <section class="features">
-    <h2>💡 Server Features</h2>
-    <div class="grid">
-      <div class="card">✅ Hardcore SMP</div>
-      <div class="card">🧨 Anarchy PvP</div>
-      <div class="card">💰 Player Economy</div>
-      <div class="card">🔗 Crossplay (Java + Bedrock)</div>
-      <div class="card">🛒 Auction House</div>
-      <div class="card">💎 Shard System</div>
+    <div class="store-grid">
+      <div class="store-item">
+        <img src="images/rank1.png" alt="Rank Icon">
+        <h3>VIP Rank</h3>
+        <button>Add to Cart</button>
+      </div>
+      <div class="store-item">
+        <img src="images/crate.png" alt="Crate Icon">
+        <h3>Crate Key</h3>
+        <button>Add to Cart</button>
+      </div>
+      <!-- Add more store items here -->
     </div>
-  </section>
+  </main>
 
+  <!-- Footer -->
   <footer>
-    <p>Not affiliated with Mojang or Microsoft. © DonutSMP Replica</p>
+    <p>© 2025 FrostMC | Not affiliated with Mojang AB.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
