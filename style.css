@@ -1,118 +1,156 @@
-/* Reset */
-body, html {
+/* GLOBAL */
+body {
   margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
+  background: #121212 url('images/background.jpg') center/cover no-repeat fixed;
   color: white;
-  height: 100%;
 }
 
-/* Background */
-.bg-overlay {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('images/background.jpg') center center/cover no-repeat;
-  filter: brightness(0.5);
-  z-index: -1;
-}
+a { text-decoration: none; color: white; }
 
-/* Top Bar */
-.top-bar {
+/* NAVBAR */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0,0,0,0.7);
 }
 
-.server-info button {
-  background: #00c3ff;
-  border: none;
-  padding: 8px 14px;
-  color: white;
+.logo {
+  height: 40px;
+}
+
+.nav-center a {
+  margin: 0 15px;
   font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.server-info button:hover {
-  background: #00a3cc;
 }
 
-.login-bar {
+.nav-right {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
-.login-bar input {
-  padding: 5px;
-  border: none;
-  border-radius: 4px;
-  margin-right: 8px;
-}
-.login-bar img {
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  margin-right: 8px;
-}
-.login-bar button {
-  background: #ff6600;
-  border: none;
+
+.nav-icon, .login-btn, .copy-ip {
+  background: white;
+  color: black;
   padding: 6px 12px;
-  color: white;
-  font-weight: bold;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.2s;
-}
-.login-bar button:hover {
-  background: #cc5200;
 }
 
-/* Store */
-.store {
+.server-status {
+  background: #0066cc;
+  padding: 4px 8px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HERO */
+.hero {
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
+  background: rgba(0,0,0,0.5);
 }
 
-.store-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  max-width: 900px;
-  margin: 0 auto;
+.hero h1 {
+  font-size: 2.5rem;
 }
 
-.store-item {
-  background: rgba(255, 255, 255, 0.1);
+.start-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* CARDS ROW */
+.cards-row {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+
+.card {
+  flex: 1;
+  background: #1a1a1a;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  transition: transform 0.2s;
-}
-.store-item:hover {
-  transform: scale(1.05);
-}
-.store-item img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 10px;
-}
-.store-item button {
-  background: #ff6600;
-  border: none;
-  padding: 6px 12px;
-  color: white;
-  font-weight: bold;
   cursor: pointer;
 }
-.store-item button:hover {
-  background: #cc5200;
+
+.blue-card {
+  background: #005b99;
 }
 
-/* Footer */
+/* SALE BANNER */
+.sale-banner {
+  margin: 20px;
+  padding: 20px;
+  background: #0d1b2a;
+  border: 1px solid #005b99;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* SECTION TITLE */
+.section-title {
+  padding: 10px 20px;
+  background: #004080;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* ITEM GRID */
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 0 0 10px 10px;
+}
+
+.item-card {
+  background: #2a2a2a;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.item-card img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-right: 5px;
+}
+
+.cart-btn {
+  background: #007bff;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0,0,0,0.8);
 }
